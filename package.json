@@ -1,0 +1,28 @@
+{
+  "name": "easymoney",
+  "version": "0.1.0",
+  "description": "Cyberpunk distributed-compute platform prototype",
+  "private": true,
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:web": "pnpm --filter @easymoney/web dev",
+    "dev:api": "pnpm --filter @easymoney/api dev",
+    "dev:all": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @easymoney/web build",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "typecheck": "pnpm -r typecheck",
+    "android:build": "pnpm --filter @easymoney/android build",
+    "android:sync": "pnpm --filter @easymoney/android sync"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  }
+}

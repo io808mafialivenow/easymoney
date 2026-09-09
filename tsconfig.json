@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "@easymoney/*": ["packages/*", "apps/*", "services/*"]
+    }
+  },
+  "include": ["packages", "apps", "services"],
+  "references": [
+    { "path": "./apps/web" },
+    { "path": "./packages/shared" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/terminal" },
+    { "path": "./packages/swarm" },
+    { "path": "./packages/demo-engine" },
+    { "path": "./packages/wallet" },
+    { "path": "./services/api" }
+  ]
+}
