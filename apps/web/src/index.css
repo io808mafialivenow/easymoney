@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #020305;
+  --color-green: #00ff66;
+  --color-cyan: #00e5ff;
+  --color-magenta: #ff00aa;
+  --color-amber: #ffb000;
+  --color-red: #ff3344;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-green);
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
+
+.terminal-glow {
+  text-shadow: 0 0 10px var(--color-green);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 10px var(--color-cyan);
+}
+
+.glow-magenta {
+  text-shadow: 0 0 10px var(--color-magenta);
+}
+
+.scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+}
